@@ -1,0 +1,23 @@
+.Button {
+  background: gray;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  padding: 0.5 rem;
+  &.Button--active {
+    background-color: green;
+  }
+  &.Button--diabled,
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+.Button.Button--link {
+  background: none;
+  padding: 0;
+  &.Button--active {
+    color: green;
+  }
+}
